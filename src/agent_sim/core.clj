@@ -54,7 +54,7 @@
   (q/smooth)                                        ;; Turn on anti-aliasing
   (q/frame-rate (:fps @sim-argmap))                 ;; Set framerate
   (q/background (:background-color @sim-argmap))   ;; Set the background colour
-  (reset! agents (conj @agents my-agent))
+  ;(reset! agents (conj @agents my-agent))
   
   (init-all-agents))
 
@@ -83,9 +83,14 @@
           (get-drawable-shape (get @agents i))
           (recur (inc i)))))))
 
-(q/defsketch simulation                ;; Define a new sketch named simulation
-  :title (:frame-title @sim-argmap)    ;; Set the title of the sketch
-  :setup setup                         ;; Specify the setup fn
-  :draw draw                           ;; Specify the draw fn
-  :size (:frame-size @sim-argmap))
+(defn run-simulation
+  [argmap]
+  (do
+    (reset! agents (apply conj @agents 
+                          (vec (repeat 3 my-agent))))
+    (q/defsketch simulation                ;; Define a new sketch named simulation
+      :title (:frame-title @sim-argmap)    ;; Set the title of the sketch
+      :setup setup                         ;; Specify the setup fn
+      :draw draw                           ;; Specify the draw fn
+      :size (:frame-size @sim-argmap))))
 
