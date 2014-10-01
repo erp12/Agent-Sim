@@ -1,0 +1,2 @@
+cmdhistory=["(concat \:test-concat- 5)" "(def test 5)" "test" "(concat \:test- test)" "(concat \:test- (key test))" "(concat \:test- (keyword test))" "(keyword 5)" "5" "\:hello" "(keyword test)" "(\:test- 5)" "(print \:test- 5)" "q/stroke" "quil.core/random" "(quil.core/random)" "(quil.core/random 5)" "(random 5)" "(rand 5)" "(random 5)" "(random 5 10)" "'(+ 1 2)" "(eval '(+ 1 2))" "(for [i (count [1 1 1])]\\n  (print \:hi))" "(conj [1 2 3] 5)" "(conj [] 5)" "(conj [] my-agent)"]
+eclipse.preferences.version=1
