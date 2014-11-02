@@ -1,4 +1,4 @@
-This project has been put on hold, likeley forever, in favor of helping develope https://github.com/lspector/pucks
+This project has been put on hold, likeley forever, in favor of helping develop https://github.com/lspector/pucks
 
 # Agent-Sim
 
