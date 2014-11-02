@@ -1,3 +1,5 @@
+This project has been put on hold, likeley forever, in favor of helping develope https://github.com/lspector/pucks
+
 # Agent-Sim
 
 A Clojure library designed to allow user to define custom behaviors for 2D agents.
@@ -55,10 +57,3 @@ To run the simulation you will need a problem specific argmap and a run-simulati
       :size (:frame-size @sim-argmap))))
 ```
 The argmap must hold information for the quil sketch and the run-simulation function must 1) add all the agents atom 2) start the quil sketch.
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
